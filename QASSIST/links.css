@@ -1,0 +1,222 @@
+/*-------------- BADGE --------------*/
+
+.qassist-badge {
+    position: fixed;
+    height: 45px;
+    right: -250px;
+    color: #ffffff;
+    background: #222;
+    border-radius: 8px 0 0 8px;
+    font-size: 20px;
+    z-index: 0;
+    bottom: 70px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    z-index: 998;
+    width: 300px;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.qassist-badge:hover {
+    cursor: pointer;
+}
+
+.qassist-badge.red-bad:hover,
+.qassist-badge.yellow-warn:hover {
+    right: 0;
+}
+
+.qassist-badge_caret {
+    margin: 0 15px 0 10px;
+}
+
+.qassist-badge_logo {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.qassist-badge_text {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+.qassist-badge.green-good {
+    background: green;
+}
+
+.qassist-badge.yellow-warn {
+    background: yellow;
+}
+
+.qassist-badge.red-bad {
+    background: #f52b0c;
+}
+
+.qassist-badge.green-good .qassist-badge_logo {
+    background-image: url('../qassist_white-checkmark.png');
+}
+
+.qassist-badge.yellow-warn .qassist-badge_logo {
+    background-image: url('../qassist_black-exclamation.png');
+}
+
+.qassist-badge.red-bad .qassist-badge_logo {
+    background-image: url('../qassist_white-x.png');
+}
+
+.qassist-badge p {
+    display: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.qassist-badge.yellow-warn p {
+    color: #000000;
+}
+
+.qassist-badge.red-bad p {
+    color: #ffffff;
+}
+
+.qassist-badge.has-links p.qassist-badge_links,
+.qassist-badge.has-placeholders p.qassist-badge_placeholders {
+    display: block;
+}
+
+
+/*-------------- FLYOUT --------------*/
+
+.qassist-descr {
+    display: block;
+    position: fixed;
+    min-height: 100vh;
+    width: 400px;
+    background: #222222;
+    right: -460px;
+    top: 0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    z-index: 999;
+    font-family: sans-serif;
+    box-shadow: -3px -2px 15px #222;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.qassist-descr_inner {
+    padding: 30px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.qassist-descr.show {
+    right: 0;
+}
+
+.qassist-descr_right-arrow {
+    background-image: url('../qassist_right-arrow.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    padding-bottom: 50px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.qassist-descr_right-arrow:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+p.qassist-descr_title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid #444444;
+    padding-top: 19px;
+}
+
+.qassist-descr_body li {
+    font-size: 14px;
+}
+
+.qassist-descr_body .warn {
+    color: #d0e01b;
+}
+
+.qassist-descr_body .bad {
+    color: #f52b0c;
+}
+
+.qassist-descr_ul {
+    padding-left: 18px;
+    letter-spacing: 0.07rem;
+}
+
+.qassist-descr_ul li {
+    padding-bottom: 15px;
+}
+
+.qassist-descr_ul li.greyed-out {
+    color: #999999;
+}
+
+.qassist-descr_ul li span.block {
+    display: block;
+    margin: 5px 0px;
+}
+
+.qassist-descr_ul li span.italic {
+    font-style: italic;
+}
+
+.span.qassist-descr_subtitle {
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+
+span.qassist-descr_details {
+    color: #ffffff;
+}
+
+span.qassist-descr_subtext {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.qassist-descr_ul li span.highlighted {
+    font-style: italic;
+    font-weight: bold;
+    background: #111111;
+    padding: 2px;
+    line-height: 1.5;
+}

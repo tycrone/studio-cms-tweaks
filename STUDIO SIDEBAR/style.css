@@ -1,0 +1,109 @@
+.studio-sidebar {
+    position: fixed;
+    height: 45px;
+    right: -50px;
+    color: #ffffff;
+    background: #22272b;
+    border-radius: 8px 0 0 8px;
+    font-size: 20px;
+    z-index: 0;
+    bottom: 120px;
+    padding: 10px 13px;
+    display: block;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    z-index: 99;
+    width: 100px;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.studio-sidebar:hover {
+    right: 0;
+}
+
+.studio-sidebar_logo {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url('../files/design/studio-logo.svg');
+}
+
+.studio-sidebar_content {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    background: #22272b;
+    box-shadow: 2px -2px 5px #000000;
+    border-radius: 5px 0 0 0;
+}
+
+.studio-sidebar_content a,
+.studio-sidebar_extension-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+    line-height:1;
+}
+
+.studio-sidebar_extension-header{
+    border-bottom:#333333
+}
+
+.studio-sidebar_extension-header hr{
+    width: 67%;
+    height: 1px;
+    margin: 6px auto -2px auto;
+    color: #222222;
+    border: 1px solid #555555;
+}
+
+.studio-sidebar_content-inner a:first-of-type {
+    padding-top: 10px;
+    border-radius: 8px 0 0 0;
+    box-shadow: 0px -2px 3px #111111;
+}
+
+.studio-sidebar_content a:hover {
+    background: #121517;
+    cursor: pointer;
+}
+
+.studio-sidebar_content-inner{
+    z-index: 10;
+    display: block;
+    position: relative;
+    border-radius: 8px 0 0 0;
+    background:#22272b;
+}
+.studio-sidebar_extension{
+    z-index:9;
+    background:#22272c;
+    border-radius: 8px 0 0 0;
+    box-shadow: 0px -1px 5px #111111;
+    display:block;
+    position:absolute;
+    width:100%;
+    overflow:hidden;
+    top:-45px;
+    height:200px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.studio-sidebar_extension:hover{
+    height:auto;
+    display:block;
+    position:absolute;
+    top:calc(-100% - 50px);
+    bottom:0;
+}
